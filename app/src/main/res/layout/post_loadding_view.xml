@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="@dimen/dp_56"
-    android:layout_height="@dimen/dp_56"
+    android:layout_width="56dp"
+    android:layout_height="56dp"
     android:background="@drawable/base_dialog_progress_border">
 
     <ImageView
         android:id="@+id/iv_dialog_progress"
-        android:layout_width="@dimen/dp_24"
-        android:layout_height="@dimen/dp_24"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
         android:layout_gravity="center"
         android:scaleType="centerInside"
         android:src="@drawable/progress_drawable_white" />

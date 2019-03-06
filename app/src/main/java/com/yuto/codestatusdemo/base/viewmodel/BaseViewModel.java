@@ -12,19 +12,19 @@ import com.yuto.codestatusdemo.base.bean.CodeStatus;
 public abstract class BaseViewModel extends ViewModel {
     protected MutableLiveData<CodeStatus> mLDPageStatus = new MutableLiveData<>();
 
-    public MutableLiveData<CodeStatus> getPageStatus() {
+    public MutableLiveData<CodeStatus> getCodeStatus() {
         return mLDPageStatus;
     }
 
-    public void changePageStatus(CodeStatus pPageStatus) {
+    public void changeCodeStatus(CodeStatus pPageStatus) {
         mLDPageStatus.setValue(pPageStatus);
     }
 
     public void pageSuccess() {
-        changePageStatus(CodeStatus.SUCCESS);
+        changeCodeStatus(CodeStatus.SUCCESS);
     }
 
     public void pageLoading() {
-        changePageStatus(CodeStatus.LOADING);
+        changeCodeStatus(CodeStatus.LOADING);
     }
 }

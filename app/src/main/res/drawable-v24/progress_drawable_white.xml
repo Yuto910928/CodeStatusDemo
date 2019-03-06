@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="34" android:drawable="@drawable/icon_loading_00" />
+    <item android:duration="34" android:drawable="@drawable/icon_loading_01" />
+    <item android:duration="34" android:drawable="@drawable/icon_loading_02" />
+    <item android:duration="34" android:drawable="@drawable/icon_loading_03" />
+    <item android:duration="34" android:drawable="@drawable/icon_loading_04" />
+    <item android:duration="34" android:drawable="@drawable/icon_loading_05" />
+    <item android:duration="34" android:drawable="@drawable/icon_loading_06" />
+    <item android:duration="34" android:drawable="@drawable/icon_loading_07" />
+    <item android:duration="34" android:drawable="@drawable/icon_loading_08" />
+    <item android:duration="34" android:drawable="@drawable/icon_loading_09" />
+    <item android:duration="34" android:drawable="@drawable/icon_loading_10" />
+    <item android:duration="34" android:drawable="@drawable/icon_loading_11" />
+    <item android:duration="34" android:drawable="@drawable/icon_loading_12" />
+    <item android:duration="34" android:drawable="@drawable/icon_loading_13" />
+    <item android:duration="34" android:drawable="@drawable/icon_loading_14" />
+    <item android:duration="34" android:drawable="@drawable/icon_loading_15" />
+    <item android:duration="34" android:drawable="@drawable/icon_loading_16" />
+    <item android:duration="34" android:drawable="@drawable/icon_loading_17" />
+    <item android:duration="34" android:drawable="@drawable/icon_loading_18" />
+    <item android:duration="34" android:drawable="@drawable/icon_loading_19" />
+    <item android:duration="34" android:drawable="@drawable/icon_loading_20" />
+    <item android:duration="34" android:drawable="@drawable/icon_loading_21" />
+    <item android:duration="34" android:drawable="@drawable/icon_loading_22" />
+    <item android:duration="34" android:drawable="@drawable/icon_loading_23" />
+    <item android:duration="34" android:drawable="@drawable/icon_loading_24" />
+    <item android:duration="34" android:drawable="@drawable/icon_loading_25" />
+    <item android:duration="34" android:drawable="@drawable/icon_loading_26" />
+    <item android:duration="34" android:drawable="@drawable/icon_loading_27" />
+    <item android:duration="34" android:drawable="@drawable/icon_loading_28" />
+    <item android:duration="34" android:drawable="@drawable/icon_loading_29" />
+
+</animation-list>

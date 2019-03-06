@@ -1,52 +1,55 @@
 package com.yuto.codestatusdemo;
 
-import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.View;
-import android.view.Menu;
-import android.view.MenuItem;
 
-public class MainActivity extends AppCompatActivity {
+import com.yuto.codestatusdemo.base.bean.CodeStatus;
+import com.yuto.codestatusdemo.base.ui.BaseActivity;
+
+public class MainActivity extends BaseActivity<MainViewModel> implements View.OnClickListener {
+    private View text1;
+    private View text2;
+    private View text3;
+    private View text4;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+    protected int getContentViewId() {
+        return R.layout.activity_main;
     }
 
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
+    protected void initView() {
+        text1 = findViewById(R.id.tv_text);
+        text2 = findViewById(R.id.tv_text2);
+        text3 = findViewById(R.id.tv_text3);
+        text4 = findViewById(R.id.tv_text4);
+        text1.setOnClickListener(this);
+        text2.setOnClickListener(this);
+        text3.setOnClickListener(this);
+        text4.setOnClickListener(this);
     }
 
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
+    protected void bindData() {
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+    }
+
+    @Override
+    public void onClick(View v) {
+        int id = v.getId();
+        switch (id) {
+            case R.id.tv_text:
+                viewModel.changeCodeStatus(new CodeStatus(CodeStatus.CODE_ERROR_HTTP,"http error 404"));
+                break;
+            case R.id.tv_text2:
+                viewModel.post();
+                break;
+            case R.id.tv_text3:
+                viewModel.permission();
+                break;
+            case R.id.tv_text4:
+                viewModel.token();
+                break;
+
         }
-
-        return super.onOptionsItemSelected(item);
     }
 }
